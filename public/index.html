@@ -4,16 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LocalDrop</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <h1>📦 LocalDrop</h1>
-      <p>Fast local file transfer</p>
+      <img src="/logo.png" alt="LocalDrop" class="logo" />
     </div>
 
-    <!-- Send Section -->
     <div class="card">
       <h2>Send Files to PC</h2>
       <div class="drop-zone" id="dropZone">
@@ -28,14 +27,12 @@
       <p id="sendStatus" class="status"></p>
     </div>
 
-    <!-- Receive Section -->
     <div class="card">
       <h2>Receive Files from PC</h2>
       <button class="btn btn-refresh" id="refreshBtn">Check for Files</button>
       <div id="fileListContainer" class="file-list"></div>
     </div>
   </div>
-
   <script src="app.js"></script>
 </body>
 </html>
