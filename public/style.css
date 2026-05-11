@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 0 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00e0ff;
+}
+
+.header p {
+  color: #888;
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  border: 1px solid #2a2a2a;
+}
+
+.card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #ccc;
+}
+
+.drop-zone {
+  border: 2px dashed #333;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  margin-bottom: 16px;
+}
+
+.drop-zone:hover {
+  border-color: #00e0ff;
+}
+
+.drop-zone p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.file-list {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.file-item {
+  background: #222;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  color: #aaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-item a {
+  color: #00e0ff;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 8px;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-send {
+  background: #00e0ff;
+  color: #000;
+}
+
+.btn-refresh {
+  background: #222;
+  color: #00e0ff;
+  border: 1px solid #00e0ff;
+}
+
+.progress-wrap {
+  background: #222;
+  border-radius: 99px;
+  height: 6px;
+  margin-top: 14px;
+  display: none;
+}
+
+.progress-bar {
+  height: 6px;
+  border-radius: 99px;
+  background: #00e0ff;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.status {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #888;
+  min-height: 20px;
+}
